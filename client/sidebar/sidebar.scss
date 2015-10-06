@@ -1,9 +1,10 @@
 
 .brand-div {
 	height: 10vh;
-	width: 15vw;
-	border-bottom: 1px solid #222;
+	width: 200px;
+	border-bottom: 1px solid #333;
 	margin-bottom: 20px;
+	background-color: #222;
 }
 .brand-div:hover {
 	cursor: pointer;
@@ -14,12 +15,12 @@
 	color: #444;
 	text-align: center;
 	line-height: 2.5em;
-	margin-left: 2.7vw;
+	margin-left: 2.5vw;
 	letter-spacing: 5px;
 }
 .panel-div {
 	height: 5vh;
-	width: 15vw;
+	width: 200px;
 	//border: 1px solid #333;
 	padding-left: 3.5vw;
 	background-color: #111;
@@ -38,7 +39,7 @@
 	font-weight: 600;
 	font-size: 1em;
 	line-height: 2.3em;
-	color: #666;
+	color: #777;
 }
 .side-icons {
 	font-size: 1.1em;
