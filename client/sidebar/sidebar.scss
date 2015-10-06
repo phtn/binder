@@ -11,7 +11,7 @@
 .brand {
 	font-family: 'Cutive Mono';
 	font-size: 2em;
-	color: #2b82ad;
+	color: #444;
 	text-align: center;
 	line-height: 2.5em;
 	margin-left: 2.7vw;
@@ -27,6 +27,11 @@
 .panel-div:hover {
 	background-color: #000;
 	cursor: pointer;
+	.panel-lbl {
+		color: #999;
+		letter-spacing: 1px;
+		transition: all .13s ease-in;
+	}
 }
 .panel-lbl {
 	font-family: 'Open Sans';
