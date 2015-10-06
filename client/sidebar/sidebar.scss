@@ -1,0 +1,56 @@
+
+.brand-div {
+	height: 10vh;
+	width: 15vw;
+	border-bottom: 1px solid #222;
+	margin-bottom: 20px;
+}
+.brand-div:hover {
+	cursor: pointer;
+}
+.brand {
+	font-family: 'Cutive Mono';
+	font-size: 2em;
+	color: #2b82ad;
+	text-align: center;
+	line-height: 2.5em;
+	margin-left: 2.7vw;
+	letter-spacing: 5px;
+}
+.panel-div {
+	height: 5vh;
+	width: 15vw;
+	//border: 1px solid #333;
+	padding-left: 3.5vw;
+	background-color: #111;
+}
+.panel-div:hover {
+	background-color: #000;
+	cursor: pointer;
+}
+.panel-lbl {
+	font-family: 'Open Sans';
+	font-weight: 600;
+	font-size: 1em;
+	line-height: 2.3em;
+	color: #666;
+}
+.side-icons {
+	font-size: 1.1em;
+	margin-right: 4px;
+} 
+.ion-person-stalker {
+	color: rgba(98,154,169, 0.7 );
+}
+.ion-ios-folder {
+	color: rgba(6,47,60, 1 );	
+}
+.ion-erlenmeyer-flask {
+	color: rgba(0,167,142, 0.6 );
+}
+.ion-calendar {
+	color: rgba(138,121,103, 0.7 );
+}
+.ion-pound {
+	color: rgba(0,167,142, 0.6 );
+}

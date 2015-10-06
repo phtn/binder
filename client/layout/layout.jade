@@ -1,0 +1,9 @@
+template(name="layout")
+	div.container
+		div.left-div
+			+Template.dynamic template=sidebar
+		div.right-div
+			div.topbar-div
+				+Template.dynamic template=topbar
+			div.body-div
+				+Template.dynamic template=body
