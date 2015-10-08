@@ -11,8 +11,8 @@ Template.sidebar.events({
 
 Template.sidebar.helpers({
 
-	panel: () => {
-		
+	sideBarPanel: () => {
+
 		return Panels.find({})
 	}
 });

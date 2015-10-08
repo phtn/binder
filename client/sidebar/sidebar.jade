@@ -2,20 +2,9 @@ template(name="sidebar")
 	div.container
 		div.brand-div
 			span.brand BINDER
-		+each panel
-			div(id="#{name}").panel-div
-				i(class="#{icon}")
-				span.panel-lbl #{title} 
-		div.panel-div#classes
-			i.ion-ios-folder.side-icons
-			span.panel-lbl CLASSES
-		div.panel-div#projects
-			i.ion-erlenmeyer-flask.side-icons
-			span.panel-lbl PROJECTS
-		div.panel-div#schedule
-			i.ion-calendar.side-icons
-			span.panel-lbl SCHEDULE
-		div.panel-div#events
-			i.ion-pound.side-icons
-			span.panel-lbl EVENTS
-
+		+each sideBarPanel
+			+each panel
+				div(id="#{name}").panel-div
+					i(class="#{icon}")
+					span.panel-lbl {{title}}
+		
