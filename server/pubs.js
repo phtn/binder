@@ -1,0 +1,1 @@
+Meteor.publish('showPanels', () => { return Panels.find({}) });

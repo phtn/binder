@@ -2,9 +2,10 @@ template(name="sidebar")
 	div.container
 		div.brand-div
 			span.brand BINDER
-		div.panel-div#peers
-			i.ion-person-stalker.side-icons
-			span.panel-lbl PEERS
+		+each panel
+			div(id="#{name}").panel-div
+				i(class="#{icon}")
+				span.panel-lbl #{title} 
 		div.panel-div#classes
 			i.ion-ios-folder.side-icons
 			span.panel-lbl CLASSES

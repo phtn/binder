@@ -1,3 +1,5 @@
+Meteor.subscribe('showPanels');
+
 Template.sidebar.events({
 	'click .brand-div': () => FlowRouter.go('/'),
 	'click #peers': () => FlowRouter.go('/peers'),
@@ -5,4 +7,12 @@ Template.sidebar.events({
 	'click #projects': () => FlowRouter.go('/projects'),
 	'click #schedule': () => FlowRouter.go('/schedule'),
 	'click #events': () => FlowRouter.go('/events'),
-})
+});
+
+Template.sidebar.helpers({
+
+	panel: () => {
+		
+		return Panels.find({})
+	}
+});
