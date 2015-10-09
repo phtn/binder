@@ -23,3 +23,5 @@ msavin:mongol
 twbs:bootstrap
 kadira:flow-router
 kadira:blaze-layout
+stylus
+shcherbin:flex-grid

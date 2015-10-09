@@ -5,29 +5,40 @@ Meteor.startup(() => {
 				{
 					name: 'peers',
 					icon: 'ion-person-stalker side-icons',
-					title: 'PEERS'
+					title: ' PEERS'
 				},
 				{
 					name: 'classes',
 					icon: 'ion-ios-folder side-icons',
-					title: 'CLASSES'
+					title: ' CLASSES'
 				},
 				{
 					name: 'projects',
 					icon: 'ion-erlenmeyer-flask side-icons',
-					title: 'PROJECTS'
+					title: ' PROJECTS'
 				},
 				{
 					name: 'schedule',
 					icon: 'ion-calendar side-icons',
-					title: 'SCHEDULE'
+					title: ' SCHEDULE'
 				},
 				{
 					name: 'events',
 					icon: 'ion-pound side-icons',
-					title: 'EVENTS'
+					title: ' EVENTS'
 				}
 			]
 		})
 	}
+
+	if (TopBarFilters.find({}).count() === 0) {
+		TopBarFilters.insert(
+			[
+				//'ALL','GROUPS','EXPLORE'
+				{name: 'peers',filters: ['ALL','GROUPS','EXPLORE']},
+				{name: 'classes',filters: [ 'PREVIOUS', 'ON-GOING', 'UP-COMING' ] }
+			]
+		)
+	}
+
 });

@@ -4,17 +4,25 @@
 	background-image: url('/img/gaussian.jpg');
 }
 .btn-topbar {
-	margin-top: 15px;
-	margin-left: 40vw;
+	margin-top: 18px;
+	margin-left: 200px;
 }
 .btn-transparent {
 	background-color: rgba(0,0,0, 0.2 ) !important;
 	border: none;
+	font-family: 'Open Sans';
+	font-weight: '400';
+	color: #222;
+	width: 200px;
+	transition-property: color;
+	transition-duration: 0.3s;
 }
 .btn-transparent:focus {
 	outline: none !important;
 }
 .btn-transparent:hover {
 	color: #ccc;
-	font-weight: bold;
+}
+.btn-transparent:focus {
+	color: rgba(0,167,142, 1 );
 }

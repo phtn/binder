@@ -1,10 +1,10 @@
 template(name="sidebar")
 	div.container
-		div.brand-div
+		div.brand-div#test-div
 			span.brand BINDER
 		+each sideBarPanel
 			+each panel
 				div(id="#{name}").panel-div
 					i(class="#{icon}")
-					span.panel-lbl {{title}}
+					span(id="#{name}").panel-lbl #{title}
 		

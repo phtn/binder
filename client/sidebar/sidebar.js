@@ -16,3 +16,9 @@ Template.sidebar.helpers({
 		return Panels.find({})
 	}
 });
+Template.sidebar.events({
+	'click .panel-div': (e) => {
+		console.log(e.target.id);
+		Session.set('whichPanel', e.target.id)
+	} 
+});

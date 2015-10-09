@@ -1,5 +1,7 @@
 template(name="topbar")
 	div.btn-group.btn-topbar
-		button.btn.btn-default.btn-transparent 1
-		button.btn.btn-default.btn-transparent 2
-		button.btn.btn-default.btn-transparent 3
+		+each topBarFilter
+			//+each classes
+			//	button.btn.btn-default.btn-transparent #{btn_name}
+			
+		

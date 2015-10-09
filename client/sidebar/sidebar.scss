@@ -12,11 +12,17 @@
 .brand {
 	font-family: 'Cutive Mono';
 	font-size: 1.7em;
+	font-weight: bold;
 	color: rgba(0,167,142, 0.4 );
 	text-align: center;
 	line-height: 2.7em;
 	margin-left: 2.7vw;
 	letter-spacing: 5px;
+	transition-property: letter-spacing;
+	transition-duration: 3s;
+}
+.brand:hover {
+	letter-spacing: 7px;
 }
 .panel-div {
 	height: 5vh;
@@ -24,8 +30,22 @@
 	//border: 1px solid #333;
 	padding-left: 3.5vw;
 	background-color: #111;
+	transition-property: background-color;
+	transition-duration: 0.4s;
 }
 .panel-div:hover {
+	background-color: #000;
+	cursor: pointer;
+	.panel-lbl {
+		color: #999;
+		letter-spacing: 0.3px;
+		transition: all .13s ease-in;
+	}
+	.side-icons {
+		color: rgba(0,167,142, 0.6 );
+	}
+}
+.panel-div:focus {
 	background-color: #000;
 	cursor: pointer;
 	.panel-lbl {
